@@ -40,6 +40,7 @@ Supported platform architecture:
 ```
 wget -q -O /usr/sbin/setup2 "https://raw.githubusercontent.com/NevermoreSSH/cfwarp/main/setup.sh" && chmod +x /usr/sbin/setup2 && setup2
 ```
+Type "warp" for menu
 
 ### Subcommands
 
