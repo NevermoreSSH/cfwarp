@@ -72,67 +72,67 @@ read -p "Select From Options [ 1 - 17 ] : " menu
 case $menu in
 1)
 clear
-bash warp.sh install
+bash warp2 install
 ;;
 2)
 clear
-bash warp.sh uninstall
+bash warp2 uninstall
 ;;
 3)
 clear
-bash warp.sh restart
+bash warp2 restart
 ;;
 4)
 clear
-bash warp.sh proxy 
+bash warp2 proxy 
 ;;
 5)
 clear
-bash warp.sh unproxy
+bash warp2 unproxy
 ;;
 6)
 clear
-bash warp.sh wg
+bash warp2 wg
 ;;
 7)
 clear
-bash warp.sh wg4
+bash warp2 wg4
 ;;
 8)
 clear
-bash warp.sh wg6 
+bash warp2 wg6 
 ;;
 9)
 clear
-bash warp.sh wgd 
+bash warp2 wgd 
 ;;
 10)
 clear
-bash warp.sh wgx 
+bash warp2 wgx 
 ;;
 11)
 clear
-bash warp.sh rwg 
+bash warp2 rwg 
 ;;
 12)
 clear
-bash warp.sh dwg 
+bash warp2 dwg 
 ;;
 13)
 clear
-bash warp.sh status 
+bash warp2 status 
 ;;
 14)
 clear
-bash warp.sh version 
+bash warp2 version 
 ;;
 15)
 clear
-bash warp.sh help 
+bash warp2 help 
 ;;
 16)
 clear
-bash warp.sh menu 
+bash warp2 menu 
 ;;
 17)
 clear
