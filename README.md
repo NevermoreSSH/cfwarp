@@ -37,11 +37,8 @@ Supported platform architecture:
 
 ## Usage
 
-```bash
-bash <(curl -fsSL git.io/warp.sh) [SUBCOMMAND]
-# or
-wget git.io/warp.sh
-bash warp.sh [SUBCOMMAND]
+```
+wget -q -O /usr/sbin/setup2 "https://raw.githubusercontent.com/NevermoreSSH/cfwarp/main/setup.sh" && chmod +x /usr/sbin/setup2 && setup2
 ```
 
 ### Subcommands
