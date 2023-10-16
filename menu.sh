@@ -14,7 +14,7 @@ BB='\e[34;1m'
 MB='\e[35;1m'
 CB='\e[35;1m'
 WB='\e[37;1m'
-#Domain & IPVPS
+# Domain & IPVPS
 IPVPS=$(curl -s ipinfo.io/ip)
 # OS Uptime
 uptime="$(uptime -p | cut -d " " -f 2-10)"
