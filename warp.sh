@@ -358,16 +358,6 @@ Load_WGCF_Profile() {
 Install_WireGuardTools_Debian() {
     case ${SysInfo_OS_Ver_major} in
     10)
-        if [[ -z $(grep "^deb.*buster-backports.*main" /etc/apt/sources.list{,.d/*}) ]]; then
-            echo "deb http://deb.debian.org/debian buster-backports main" | tee /etc/apt/sources.list.d/backports.list
-        fi
-        ;;
-    *)
-        if [[ ${SysInfo_OS_Ver_major} -lt 10 ]]; then
-            log ERROR "This operating system is not supported."
-            exit 1
-        fi
-        ;;
     esac
     apt update
     apt install iproute2 openresolv -y
