@@ -50,6 +50,7 @@ sleep 1
 clear
 
 chmod +x /root/restart_wg
+# enable manual restart wg every 6am
 echo "#30 6 * * * root /root/restart_wg" >> /etc/crontab
 clear
 
