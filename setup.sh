@@ -39,6 +39,20 @@ apt install resolvconf -y
 # install clouflare JQ
 apt install jq curl -y
 
+# restart wg every 6am
+cat << 'EOF' > /root/restart_wg
+#!/bin/sh
+bash warp2 rwg
+
+EOF
+
+sleep 1
+clear
+
+chmod +x /root/restart_wg
+echo "#30 6 * * * root /root/restart_wg" >> /etc/crontab
+clear
+
 # download menu
 cd /usr/sbin
 wget -O warp "${REPO}menu.sh"
