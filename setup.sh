@@ -51,7 +51,7 @@ clear
 
 chmod +x /root/restart_wg
 # reload wg 0630 am
-echo "30 6 * * * root /root/restart_wg" >> /etc/crontab
+echo "#30 6 * * * root /root/restart_wg" >> /etc/crontab
 clear
 
 # download menu
