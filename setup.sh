@@ -34,24 +34,24 @@ start=$(date +%s)
 
 
 # install basic package
-apt install resolvconf -y 
+#apt install resolvconf -y 
 
 # install clouflare JQ
-apt install jq curl -y
+#apt install jq curl -y
 
 # reload wg
-cat << 'EOF' > /root/restart_wg
-#!/bin/sh
-bash warp2 wgd
+#cat << 'EOF' > /root/restart_wg
+##!/bin/sh
+#bash warp2 wgd
 
-EOF
+#EOF
 
-sleep 1
-clear
+#sleep 1
+#clear
 
-chmod +x /root/restart_wg
+#chmod +x /root/restart_wg
 # reload wg 0630 am
-echo "#30 6 * * * root /root/restart_wg" >> /etc/crontab
+#echo "#30 6 * * * root /root/restart_wg" >> /etc/crontab
 clear
 
 # download menu
