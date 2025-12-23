@@ -20,8 +20,8 @@ A Bash script that automatically installs and configures CloudFlare WARP in Linu
 
 Supported distributions:
 
-- Debian >= 10
-- Ubuntu >= 16.04
+- Debian >= 10 - 13
+- Ubuntu >= 16.04 - 24
 - Fedora
 - CentOS
 - Oracle Linux
